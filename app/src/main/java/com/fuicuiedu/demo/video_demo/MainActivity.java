@@ -1,5 +1,6 @@
 package com.fuicuiedu.demo.video_demo;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -7,6 +8,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.fuicuiedu.demo.video_demo.DemoA.DemoAActivity;
 
 import java.util.List;
 
@@ -39,9 +42,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        Intent intent;
         switch (position){
             case 0:
-                Toast.makeText(this, "0", Toast.LENGTH_SHORT).show();
+                intent = new Intent(MainActivity.this, DemoAActivity.class);
+                startActivity(intent);
                 break;
             case 1:
                 Toast.makeText(this, "1", Toast.LENGTH_SHORT).show();
