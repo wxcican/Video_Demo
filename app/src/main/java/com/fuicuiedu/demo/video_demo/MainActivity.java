@@ -10,6 +10,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.fuicuiedu.demo.video_demo.DemoA.DemoAActivity;
+import com.fuicuiedu.demo.video_demo.DemoB.DemoBActivity;
 
 import java.util.List;
 
@@ -49,7 +50,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 startActivity(intent);
                 break;
             case 1:
-                Toast.makeText(this, "1", Toast.LENGTH_SHORT).show();
+                intent = new Intent(MainActivity.this, DemoBActivity.class);
+                startActivity(intent);
                 break;
             case 2:
                 Toast.makeText(this, "2", Toast.LENGTH_SHORT).show();
