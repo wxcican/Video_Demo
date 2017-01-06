@@ -6,8 +6,13 @@
     android:layout_height="match_parent"
     tools:context="com.fuicuiedu.demo.video_demo.DemoA.DemoAActivity">
 
-    <SurfaceView
-        android:id="@+id/demo_a_sfv"
+    <!--<SurfaceView-->
+        <!--android:id="@+id/demo_a_sfv"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <TextureView
+        android:id="@+id/demo_a_ttv"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
