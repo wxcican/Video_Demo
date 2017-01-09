@@ -19,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".DemoA.DemoAActivity" />
-        <activity android:name=".DemoB.DemoBActivity"></activity>
+        <activity android:name=".DemoB.DemoBActivity" />
+        <activity android:name=".DemoC.DemoCActivity"></activity>
     </application>
 
 </manifest>

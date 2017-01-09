@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.fuicuiedu.demo.video_demo.DemoA.DemoAActivity;
 import com.fuicuiedu.demo.video_demo.DemoB.DemoBActivity;
+import com.fuicuiedu.demo.video_demo.DemoC.DemoCActivity;
 
 import java.util.List;
 
@@ -54,7 +55,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 startActivity(intent);
                 break;
             case 2:
-                Toast.makeText(this, "2", Toast.LENGTH_SHORT).show();
+                intent = new Intent(MainActivity.this, DemoCActivity.class);
+                startActivity(intent);
                 break;
             case 3:
                 Toast.makeText(this, "3", Toast.LENGTH_SHORT).show();
