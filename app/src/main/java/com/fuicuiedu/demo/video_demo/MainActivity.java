@@ -13,6 +13,7 @@ import com.fuicuiedu.demo.video_demo.DemoA.DemoAActivity;
 import com.fuicuiedu.demo.video_demo.DemoB.DemoBActivity;
 import com.fuicuiedu.demo.video_demo.DemoC.DemoCActivity;
 import com.fuicuiedu.demo.video_demo.DemoD.DemoDActivity;
+import com.fuicuiedu.demo.video_demo.DemoE.DemoEActivity;
 
 import java.util.List;
 
@@ -64,7 +65,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 startActivity(intent);
                 break;
             case 4:
-                Toast.makeText(this, "4", Toast.LENGTH_SHORT).show();
+                intent = new Intent(MainActivity.this, DemoEActivity.class);
+                startActivity(intent);
                 break;
         }
     }
