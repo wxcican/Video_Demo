@@ -7,15 +7,12 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.fuicuiedu.demo.video_demo.DemoA.DemoAActivity;
-import com.fuicuiedu.demo.video_demo.DemoB.DemoBActivity;
 import com.fuicuiedu.demo.video_demo.DemoC.DemoCActivity;
+import com.fuicuiedu.demo.video_demo.DemoB.DemoBActivity;
 import com.fuicuiedu.demo.video_demo.DemoD.DemoDActivity;
 import com.fuicuiedu.demo.video_demo.DemoE.DemoEActivity;
-
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
 
@@ -32,10 +29,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         datas = new String[]{
                 "Android MediaPlayer + SurfaceView/TextureView",
-                "Vitamio MediaPlayer + SurfaceView/TextureView",
                 "Android VideoView + MediaController",
+                "Vitamio MediaPlayer + SurfaceView/TextureView",
                 "Vitamio VideoView + MediaController",
-                "VideoView Buffer 缓冲处理"
+                "Vitamio中VideoView Buffer 缓冲处理"
         };
 
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,datas);
